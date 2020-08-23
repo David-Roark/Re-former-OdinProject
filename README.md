@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This README is a Project: Re-former. Do you want to see more info about this project, please visit [The Odin Project / Ruby on Rails](https://www.theodinproject.com/courses/ruby-on-rails/lessons/forms?ref=lnav)
 
-Things you may want to cover:
+#Goal:
+- Practice how to use form and practice more with model
 
-* Ruby version
+#Things you may want to cover:
 
-* System dependencies
+* Ruby version: 2.7.1p83
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Rails version: 6.0.3.2
