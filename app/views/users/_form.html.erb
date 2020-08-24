@@ -1,0 +1,30 @@
+<%= form_for user  do |f| %>
+  <% unless user.errors.blank? %>
+    <div class="error" style="color: red">
+      <% user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :username, 'Name' %> <br>
+    <%= f.text_field :username, value: user.username, title: 'Your name here' %>
+  </div>
+  <div class="field">
+    <%= f.label :email, 'Email' %> <br>
+    <%= f.email_field :email, value: user.email, placeholder: 'example@example.com' %>
+  </div>
+  <div class="field">
+    <%= f.label :password, 'Password' %> <br>
+    <%= f.password_field :password, title: 'Your password' %>
+  </div>
+  <div class="field">
+    <%= f.label :password_confirmation, 'Password confirmation' %> <br>
+    <%= f.password_field :password_confirmation, placeholder: 'Confirm your password' %>
+  </div>
+  <div class="field">
+    <%= f.submit %>
+  </div>
+
+<% end %>
