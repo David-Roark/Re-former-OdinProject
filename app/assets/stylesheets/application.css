@@ -13,3 +13,36 @@
  *= require_tree .
  *= require_self
  */
+body {
+  padding: 10px 50px;
+}
+
+.field {
+  margin: 5px;
+  padding: 5px;
+}
+
+.errors {
+  color: red;
+  margin: auto;
+  padding: 5px;
+}
+
+input {
+  width: 40%;
+  min-width: 300px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+.field_with_errors input {
+  border-color: red;
+  margin: 0;
+}
+
+.field_with_errors label {
+  color: red;
+}

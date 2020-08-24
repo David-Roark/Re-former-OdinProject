@@ -1,6 +1,6 @@
 <%= form_for user  do |f| %>
   <% unless user.errors.blank? %>
-    <div class="error" style="color: red">
+    <div class="errors">
       <% user.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
@@ -21,7 +21,7 @@
   </div>
   <div class="field">
     <%= f.label :password_confirmation, 'Password confirmation' %> <br>
-    <%= f.password_field :password_confirmation, placeholder: 'Confirm your password' %>
+    <%= f.password_field :password_confirmation, title: 'Confirm your password' %>
   </div>
   <div class="field">
     <%= f.submit %>

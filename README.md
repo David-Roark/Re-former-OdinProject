@@ -10,3 +10,5 @@ This README is a Project: Re-former. Do you want to see more info about this pro
 * Ruby version: 2.7.1p83
 
 * Rails version: 6.0.3.2
+
+* Yarn version: v1.22.4
